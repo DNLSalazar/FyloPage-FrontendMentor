@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+    height: 60%;
+    width: auto;
+    align-self: center;
+    margin: 0;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    margin: 0;
+    padding: 5px;
+    height: auto;
+}
+
+#menu > li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*------------------------------------------HERO---------------------------------------------------------*/
+#hero {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#heroIlustration {
+    width: 85%;
+    height: auto;
+    max-height: 505px;
+}
+
+.heroIntroduction {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroIntroduction > h2 {
+    padding: 0 25px;
+    /* font-family: 'Raleway', sans-serif; */
+    color: hsl(243, 87%, 12%);
+}
+
+.heroIntroduction > p {
+    padding: 0 20px;
+    /* font-family: 'Raleway', sans-serif; */
+    color: hsl(238, 22%, 44%);
+}
+
+.input {
+    height: 40px;
+    width: 80%;
+}
+
+[type="text"] {
+    border: 1px solid hsl(243, 87%, 12%);
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    margin-top: 5px;
+}
+
+[type="submit"]:hover {
+    background-color: hsl(224, 83%, 68%);
+}
+
+/*-----------------------------------------------PROS----------------------------------------------------------*/
+
+#pros {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#prosIlustration {
+    width: 85%;
+    height: auto;
+    max-height: 515px;
+}
+
+.heroIntroduction > span {
+    position: relative;
+    color: hsl(170, 45%, 43%);
+    /* font-family: 'Raleway', sans-serif; */
+    display: inline-block;
+}
+
+.heroIntroduction > span::before {
+    content: "";
+    width: calc(100% + 20px);
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: hsl(170, 45%, 43%);
+}
+
+.heroIntroduction > span::after {
+    content: url("images/icon-arrow.svg");
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+}
+
+.happyCostumer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    width: 85%;
+    max-width: 350px;
+    padding: 5px;
+    margin-top: 60px;
+    color: hsl(238, 22%, 44%);
+}
+
+.happyMessage {
+    text-align: start;
+    position: relative;
+}
+
+.happyMessage::before {
+    content: url("images/icon-quotes.svg");
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -20px;
+    left: 0;
+}
+
+.costumer {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.costumerPic {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.costumerInfo {
+    text-align: start;
+}
+
+.costumerInfo > h4 {
+    margin: 0;
+    color: hsl(243, 87%, 12%);
+}
+
+.costumerInfo > span {
+    font-size: 60%;
+}
+
+/*-----------------------------------------------FOOTER----------------------------------------------------------*/
+
+#footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: gray;
+    margin-top: 50px;
+}
+
+.getStarted {
+    text-align: center;
+    padding: 40px 30px 60px 30px;
+    color: white;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.getStarted > p {
+    line-height: 1.5;
+}
+
+.realFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(243, 87%, 12%);
+    padding: 40px 30px 60px 30px;
+    color: white;
+}
+
+.realFooter > .footerContact {
+    position: relative;
+}
+
+.phone::before {
+    content: url("images/icon-phone.svg");
+    margin-right: 10px;
+}
+
+.email::before {
+    content: url("images/icon-email.svg");
+    margin-right: 10px;
+}
+
+.realFooter > ul {
+    padding: 0;
+}
+
+.realFooter > ul > li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.icons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+
+    margin: 0 15px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+        padding: 10px 45px;
+    }
+
+    #logo {
+        height: 100%;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    #menu > li {
+        margin: 0 20px;
+    }
+
+    /*---------------------------------HERO----------------------------------*/
+
+    #hero {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        font-size: 125%;
+        padding: 0 25px;
+        margin-bottom: 50px;
+    }
+
+    
+    #heroIlustration {
+        width: 50%;
+        height: auto;
+        max-height: unset;
+    }
+    
+    .heroIntroduction {
+        width: 50%;
+        text-align: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .input {
+        margin: 10px 0  10px 20px;
+    }
+    
+    [type="text"] {
+        width: calc(60% - 45px);
+    }
+    
+    [type="submit"] {
+        width: calc(40% - 45px);
+    }
+    /*--------------------------------PROS-------------------------------------*/
+    #pros {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        padding: 0 25px;
+    }
+
+    #prosIlustration {
+        width: 50%;
+        height: auto;
+        max-height: unset;
+    }
+
+    .heroIntroduction > span {
+        margin-left: 20px;
+    }
+
+    .proIntro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .happyCostumer {
+        margin-left: 50px;
+    }
+    /*-------------FOOTER--------------------------------------------------*/
+
+    #footer {
+        height: auto;
+        min-height: unset;
+    }
+
+    .getStarted {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: start;
+        padding: 75px 50px;
+    }
+
+    .footerGreeting > h3 {
+        margin-top: 0;
+    }
+
+    .getStarted > div {
+        width: 40%;
+    }
+
+    .footerInputs > .inputs {
+        margin: 0;
+    }
+
+    .footerInputs > [type="text"] {
+        width: 80%;
+    }
+
+    .realFooter {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .realFooter > ul {
+        margin: 50px 0;
+    }
+}
